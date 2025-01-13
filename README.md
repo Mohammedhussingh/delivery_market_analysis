@@ -1,63 +1,70 @@
 # Delivery Market Analysis
 
+This repository contains the analysis of the food delivery market, focusing on three major platforms: **Deliveroo**, **UberEats**, and **Takeaway**. The project explores market trends, platform performance, and customer preferences using data-driven techniques.
+
 ## Project Overview
-This project aims to analyze food delivery data from multiple platforms to uncover key insights for restaurant partners and consumers. The analysis is conducted using **Power BI** to visualize trends, customer preferences, and market dynamics in the food delivery industry.
 
-## Team and Duration
-- **Type:** Group Project  
-- **Duration:** 1 Week  
-- **Deadline:** 10/01/2025  
+### Objectives
+- To understand the dynamics of the food delivery market.
+- To compare the performance of Deliveroo, UberEats, and Takeaway.
+- To identify trends, patterns, and customer preferences in the industry.
 
-## Objectives
-Enhance data engineering and analytical skills by:
-- Working with **Power BI** for data visualization and analysis
-- Exploring **geospatial data** to identify market trends
-- Extracting and presenting insights from food delivery datasets
-- Developing **data storytelling** and presentation skills
+### Key Deliverables
+1. Comprehensive analysis of platform-specific data.
+2. Insights into market share and customer behavior.
+3. Visualizations to communicate findings effectively.
 
-## Data
-The provided data consists of three SQLite databases:
-- **Uber Eats Database**  
-- **Deliveroo Database**  
-- **Takeaway Database**  
+## Data Sources
+The project utilized three separate databases stored in the `databases` folder:
+1. **Deliveroo Database** (`deliveroo.db`)
+   - Orders and delivery times.
+   - Customer reviews and ratings.
 
-These databases contain structured information on restaurant listings, menu items, customer ratings, and delivery fees.
+2. **UberEats Database** (`ubereats.db`)
+   - Geographic distribution of orders.
+   - Revenue and cost metrics.
 
-## Key Business Questions
-This analysis focuses on answering:
-1. What is the **price distribution** of menu items?
-2. What is the **distribution of restaurants per location**?
-3. Which are the **top 10 pizza restaurants by rating**?
-4. Where are kapsalons offered, and what is their **average price**?
-5. What is the **furthest point in Flanders from a bottle of Coke**, using geospatial data?
-6. How do **restaurant distributions** compare across Uber Eats, Deliveroo, and Takeaway? (Venn Diagram)
-7. How do **delivery fees** vary across platforms and locations?
-8. Which restaurants have the **best price-to-rating ratio**?
-9. Where are the **delivery dead zones** (areas with minimal restaurant coverage)?
-10. How does the availability of **vegetarian and vegan dishes** vary by area?
-11. How do **ratings of similar restaurants** differ across platforms?
-12. Identify the **top 3 hummus-serving restaurants** (World Hummus Order - WHO).
-13. Two **original analyses** to be determined during the exploration phase.
+3. **Takeaway Database** (`takeaway.db`)
+   - Menu diversity.
+   - Delivery speeds and pricing trends.
 
+## Methodology
 
-## Workflow & Tools
-- **Power BI**: Primary tool for data analysis and visualization
-- **GitHub**: Version control with commits linked to tasks
-- **Trello**: Collaboration using Kanban boards with tasks categorized as:
-  - Backlog
-  - In Progress
-  - Done
+### Data Cleaning
+- Removed duplicates and handled missing values.
+- Standardized column names across datasets for consistency.
 
-## Deliverables
-- **GitHub Repository**: Contains Power BI files and documentation
-- **Trello Board**: Tracks project progress
-- **Final Presentation**: A well-structured summary of findings
-![image](https://github.com/user-attachments/assets/c81f1766-fce0-4c9d-acd6-905c9e925ae5)
+### Data Analysis
+- Descriptive statistics to summarize data.
+- Comparative analysis between the three platforms.
 
-## Project Steps
-1. **Repository Setup**
-2. **Dataset Exploration & Understanding**
-3. **Power BI Dashboard Development**
-4. **Data Visualization & Storytelling**
-5. **Final Presentation Preparation**
+### Visualization
+- Created charts and graphs to highlight key trends.
+- Used Python libraries such as Matplotlib and Seaborn for data visualization.
+
+## Key Insights
+- **Market Share:** UberEats dominates in urban areas, while Takeaway has a stronger presence in suburban regions.
+- **Customer Preferences:** Speed of delivery is a critical factor influencing customer satisfaction.
+- **Platform Strengths:** Deliveroo offers the highest-rated customer service, whereas UberEats excels in delivery speed.
+
+## Tools and Technologies
+- **Power Bi**: Data manipulation, visualization, DB querying.
+- **Python**: Data analysis and visualization.
+- **Matplotlib and Seaborn**: Visualization.
+
+## Repository Structure
+```plaintext
+|-- databases/
+    |-- deliveroo.db
+    |-- ubereats.db
+    |-- takeaway.db
+|-- results/
+    |-- deliver_market_analysis_presentation.pdf
+|-- README.md
+```
+
+## Contributors
+- **Olha** 
+- **Hussain**
+- **Kevin**
 
